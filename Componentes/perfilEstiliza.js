@@ -16,6 +16,7 @@ const perfil = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         height: '7%',
+        width: '100%',
         borderWidth: 1,
 
     },
