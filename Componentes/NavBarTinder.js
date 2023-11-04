@@ -1,4 +1,4 @@
-import {View , Image} from 'react-native';
+import {View , Image, TouchableOpacity} from 'react-native';
 import perfil from '../estilizar/perfilEstiliza.js';
 
 export default function nav() {
@@ -7,24 +7,17 @@ export default function nav() {
 
         <View style={perfil.icon}>
           <Image
-            source={require('../assets/fogoTinder.png')}
-            style={perfil.fogoTinder}
+            source={require('../assets/navTinderLogo.png')}
+            style={perfil.logoNav}
           />
+          
+          <TouchableOpacity>
           <Image
-            source={require('../assets/tinder3.png')}
-            style={perfil.tinderFoto}
-          />
-        </View>
-        <View style={perfil.icons2}>
-          <Image
-            source={require('../assets/shield.png')}
-            style={perfil.shieldImg}
-          />
-          <Image
-            source={require('../assets/config.png')}
-            style={perfil.configImg}
-          />
-        </View>
+            source={require('../assets/configNav.png')}
+            style={perfil.configNav}
+          /> 
+          </TouchableOpacity>   
+          </View>
       </View>
     )
 }
